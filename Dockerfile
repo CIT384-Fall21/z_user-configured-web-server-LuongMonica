@@ -7,7 +7,6 @@ ENV USER ml855063
 RUN apt-get update && apt-get install -y apache2
 WORKDIR /etc/apache2
 
-#COPY 000-default.conf /etc/apache2/sites-available
 RUN a2enmod userdir
 RUN a2enmod autoindex
 
